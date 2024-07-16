@@ -1,8 +1,8 @@
 # 4th_Ai_Launch_TurtleBot_navigation
 
-Great! Since you have ROS Noetic installed, we'll proceed with the steps to set up the TurtleBot packages, the simulation package, create a map, and launch the navigation. Follow these steps carefully:
+After Installing ROS Noetic
 
-### Step 2: Install TurtleBot Packages
+### Step 1: Install TurtleBot Packages
 
 1. **Install the TurtleBot3 packages:**
    ```bash
@@ -20,7 +20,7 @@ Great! Since you have ROS Noetic installed, we'll proceed with the steps to set 
 <img src="https://github.com/user-attachments/assets/56c48525-49b0-414e-ae8b-df6096ef4ec6" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="500" height="400" />
 
 
-### Step 3: Set Up the Environment
+### Step 2: Set Up the Environment
 
 1. **Add the TurtleBot3 model to your `.bashrc` file:**
    ```bash
@@ -33,7 +33,7 @@ Great! Since you have ROS Noetic installed, we'll proceed with the steps to set 
    source /opt/ros/noetic/setup.bash
    ```
 
-### Step 4: Launch the TurtleBot3 Simulation
+### Step 3: Launch the TurtleBot3 Simulation
 
 1. **Launch the TurtleBot3 world in Gazebo:**
    ```bash
@@ -44,7 +44,7 @@ Great! Since you have ROS Noetic installed, we'll proceed with the steps to set 
 <img src="https://github.com/user-attachments/assets/1952bace-91f9-49d7-aa25-aa13789ef134" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="500" height="400" />
 
 
-### Step 5: Create a Map Using SLAM
+### Step 4: Create a Map Using SLAM
 
 1. **Launch the SLAM node:**
    ```bash
@@ -65,12 +65,12 @@ Great! Since you have ROS Noetic installed, we'll proceed with the steps to set 
 
 
 4. **Save the map:**
-   Once you have explored the environment and built a map, save the map by running the following command in a new terminal:
+   After I explored the environment and built a map, I am saving the map by running the following command in a new terminal:
    ```bash
    rosrun map_server map_saver -f ~/map
    ```
 
-### Step 6: Launch Navigation
+### Step 5: Launch Navigation
 
 1. **Launch the TurtleBot3 navigation:**
    ```bash
