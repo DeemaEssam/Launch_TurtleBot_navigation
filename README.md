@@ -60,6 +60,7 @@ Great! Since you have ROS Noetic installed, we'll proceed with the steps to set 
    ```
 <img src="https://github.com/user-attachments/assets/3851a85b-2315-4c7d-b1dd-1333229f3144" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="500" height="400" />
 <img src="https://github.com/user-attachments/assets/c0d76aae-4769-4dd5-bbb3-282f4042fc40" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="500" height="400" />
+
 ![4thtaskAi](https://github.com/user-attachments/assets/9839ce2a-058e-4abb-a162-a5697cb4a385)
 
 
