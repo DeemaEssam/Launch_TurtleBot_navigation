@@ -10,7 +10,7 @@ Great! Since you have ROS Noetic installed, we'll proceed with the steps to set 
    sudo apt install ros-noetic-turtlebot3 ros-noetic-turtlebot3-simulations
    ```
    
-<img src="https://github.com/user-attachments/assets/ba246d65-c994-4a15-9e2e-f1c93c4e37d1" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="500" height="300" />
+<img src="https://github.com/user-attachments/assets/ba246d65-c994-4a15-9e2e-f1c93c4e37d1" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="500" height="400" />
 
 
 2. **Install dependencies:**
