@@ -1,17 +1,10 @@
 # 4th_Ai_Launch_TurtleBot_navigation
-![1](https://github.com/user-attachments/assets/ba246d65-c994-4a15-9e2e-f1c93c4e37d1)
-![2](https://github.com/user-attachments/assets/56c48525-49b0-414e-ae8b-df6096ef4ec6)
-![3](https://github.com/user-attachments/assets/d9d499fb-74ad-403b-bd74-7ac86efc8c89)
-![4](https://github.com/user-attachments/assets/6e3f7b9c-10ef-471f-8026-61eabb2bc4a8)
-![5](https://github.com/user-attachments/assets/1952bace-91f9-49d7-aa25-aa13789ef134)
-![6](https://github.com/user-attachments/assets/303da213-62cd-4433-abbe-36b456c8dde8)
+
+
+
+
 ![7](https://github.com/user-attachments/assets/c1db09b3-4b71-4444-ac3d-f3f931fb30dc)
-![8](https://github.com/user-attachments/assets/7548f5c4-18d5-420b-9222-b643209ac63b)
-![9](https://github.com/user-attachments/assets/3851a85b-2315-4c7d-b1dd-1333229f3144)
-![10](https://github.com/user-attachments/assets/c0d76aae-4769-4dd5-bbb3-282f4042fc40)
-![11](https://github.com/user-attachments/assets/a51cafa7-5ee4-4393-b09e-78c614ba95b8)
-![12](https://github.com/user-attachments/assets/e0f3bd5c-a26c-467a-b930-72e065294af1)
-![13](https://github.com/user-attachments/assets/8c38fdcf-8fee-4634-b63e-54a8ab6a75e2)
+
 
 
 Great! Since you have ROS Noetic installed, we'll proceed with the steps to set up the TurtleBot packages, the simulation package, create a map, and launch the navigation. Follow these steps carefully:
@@ -23,11 +16,16 @@ Great! Since you have ROS Noetic installed, we'll proceed with the steps to set 
    sudo apt update
    sudo apt install ros-noetic-turtlebot3 ros-noetic-turtlebot3-simulations
    ```
+   
+![1](https://github.com/user-attachments/assets/ba246d65-c994-4a15-9e2e-f1c93c4e37d1)
 
 2. **Install dependencies:**
    ```bash
    sudo apt install ros-noetic-navigation ros-noetic-slam-gmapping
    ```
+
+   ![2](https://github.com/user-attachments/assets/56c48525-49b0-414e-ae8b-df6096ef4ec6)
+   
 
 ### Step 3: Set Up the Environment
 
@@ -48,6 +46,11 @@ Great! Since you have ROS Noetic installed, we'll proceed with the steps to set 
    ```bash
    roslaunch turtlebot3_gazebo turtlebot3_world.launch
    ```
+   
+![4](https://github.com/user-attachments/assets/6e3f7b9c-10ef-471f-8026-61eabb2bc4a8)
+![3](https://github.com/user-attachments/assets/d9d499fb-74ad-403b-bd74-7ac86efc8c89)
+![5](https://github.com/user-attachments/assets/1952bace-91f9-49d7-aa25-aa13789ef134)
+
 
 ### Step 5: Create a Map Using SLAM
 
@@ -55,18 +58,27 @@ Great! Since you have ROS Noetic installed, we'll proceed with the steps to set 
    ```bash
    roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
    ```
+![6](https://github.com/user-attachments/assets/303da213-62cd-4433-abbe-36b456c8dde8)
+![8](https://github.com/user-attachments/assets/7548f5c4-18d5-420b-9222-b643209ac63b)
 
 2. **Control the TurtleBot using the keyboard:**
-   Open a new terminal and run:
+
    ```bash
    roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
    ```
+   ![9](https://github.com/user-attachments/assets/3851a85b-2315-4c7d-b1dd-1333229f3144)
+   ![10](https://github.com/user-attachments/assets/c0d76aae-4769-4dd5-bbb3-282f4042fc40)
+   
+   ![4thtaskAi](https://github.com/user-attachments/assets/9839ce2a-058e-4abb-a162-a5697cb4a385)
 
-3. **Save the map:**
+
+4. **Save the map:**
    Once you have explored the environment and built a map, save the map by running the following command in a new terminal:
    ```bash
    rosrun map_server map_saver -f ~/map
    ```
+
+![11](https://github.com/user-attachments/assets/a51cafa7-5ee4-4393-b09e-78c614ba95b8)
 
 ### Step 6: Launch Navigation
 
@@ -74,24 +86,5 @@ Great! Since you have ROS Noetic installed, we'll proceed with the steps to set 
    ```bash
    roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/map.yaml
    ```
-
-### Step-by-Step Explanation
-
-1. **Install TurtleBot Packages:**
-   - We installed the TurtleBot3 and TurtleBot3 simulation packages along with their dependencies to ensure we have all necessary tools for navigation and SLAM.
-
-2. **Set Up the Environment:**
-   - The `TURTLEBOT3_MODEL` environment variable is set to specify which TurtleBot3 model we are using (`burger` in this case). This helps the launch files configure the simulation accordingly.
-
-3. **Launch the Simulation:**
-   - We launched the TurtleBot3 world in Gazebo, which provides a simulated environment where we can test the navigation and SLAM.
-
-4. **Create a Map Using SLAM:**
-   - By launching the SLAM node with `gmapping`, we enabled the TurtleBot to create a map of its environment as it navigates.
-   - The `teleop` package allows us to control the TurtleBot manually using the keyboard.
-   - Once the map is created, we save it to a file using the `map_saver` node.
-
-5. **Launch Navigation:**
-   - With the saved map, we launched the TurtleBot3 navigation stack. This allows the TurtleBot to navigate autonomously within the environment using the map we created.
-
-If you encounter any issues or need further clarification, feel free to ask!
+![12](https://github.com/user-attachments/assets/e0f3bd5c-a26c-467a-b930-72e065294af1)
+![13](https://github.com/user-attachments/assets/8c38fdcf-8fee-4634-b63e-54a8ab6a75e2)
