@@ -22,7 +22,7 @@ After Installing ROS Noetic
 
 ### Step 2: Set Up the Environment
 
-1. **Add the TurtleBot3 model to your `.bashrc` file:**
+1. **Adding the TurtleBot3 model to `.bashrc` file:**
    ```bash
    echo "export TURTLEBOT3_MODEL=burger" >> ~/.bashrc
    source ~/.bashrc
@@ -35,7 +35,7 @@ After Installing ROS Noetic
 
 ### Step 3: Launch the TurtleBot3 Simulation
 
-1. **Launch the TurtleBot3 world in Gazebo:**
+1. **Launching the TurtleBot3 world in Gazebo:**
    ```bash
    roslaunch turtlebot3_gazebo turtlebot3_world.launch
    ```
